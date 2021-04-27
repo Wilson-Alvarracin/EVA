@@ -1,0 +1,179 @@
+    /* Reglas por defecto */
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    * {
+        box-sizing: border-box;
+        /* https://fonts.google.com */
+        font-family: 'Quicksand', sans-serif;
+    }
+    
+    body {
+        margin: 0;
+    }
+    /* Clear floats after the columns */
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /*BARRA DE NAVEGACIÓN*/
+    
+    ul {
+        width: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: -webkit-sticky;
+        /* Safari */
+        position: sticky;
+        top: 0;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: #111;
+    }
+    
+    .active {
+        background-color: #4CAF50;
+    }
+    /*Encabezado*/
+    
+    #header {
+        background-color: white;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    #header h1 {
+        font-size: 4vw;
+        text-align: center;
+        color: black;
+    }
+    
+    #header h1 {
+        font-size: 5vw;
+    }
+    
+    #header h2 {
+        font-size: 1.9vw;
+    }
+    /* Reglas asociadas a las columnas */
+    
+    .column1 {
+        width: 100%;
+        float: left;
+    }
+    
+    .column2 {
+        width: 50%;
+        float: left;
+    }
+    
+    img {
+        box-shadow: 10px 10px grey;
+    }
+    /*Primera sección */
+    
+    #section-2 {
+        background-color: rgb(15, 13, 13);
+    }
+    /*CUARTA SECCIÓN */
+    
+    #section-4 {
+        background-color: rgb(15, 13, 13);
+    }
+    /*SEXTA SECCIÓN*/
+    
+    #section-6 {
+        background-color: rgb(15, 13, 13);
+    }
+    /* Estilo Recuadro */
+    
+    .recuadro h1 {
+        color: white;
+    }
+    
+    .recuadro p {
+        color: white;
+    }
+    /* Reglas Auxiliares */
+    
+    .relleno-lateral {
+        padding-left: 9%;
+        padding-right: 9%;
+    }
+    
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .relleno-auxiliar {
+        padding-bottom: 4%;
+        padding-top: 4%;
+    }
+    
+    img {
+        float: center;
+    }
+    /*VIDEO RESPONSIVE */
+    
+    .responsive {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+    }
+    
+    .responsive iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    @media screen and (max-width: 700px) {
+        #section-1 h1 {
+            text-align: center;
+        }
+        .column2 {
+            width: 100%;
+            float: left;
+        }
+        .flex {
+            display: block;
+        }
+        #section-4 img {
+            width: 90%;
+        }
+        #section-5 img {
+            width: 90%;
+        }
+        #section-6 img {
+            width: 90%;
+        }
+        .aj {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
